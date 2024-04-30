@@ -1,0 +1,16 @@
+apiVersion: score.dev/v1b1
+
+metadata:
+  name: # Set by command line
+
+# Define the ports that this service exposes
+service:
+  ports:
+    www:
+      port: 80 # The port that the service will be exposed on
+      targetPort: 8080 # The default port of tomcat is 8080
+
+# Define the containers that make up this service
+containers:
+  frontend:
+    image: # Set by command line
