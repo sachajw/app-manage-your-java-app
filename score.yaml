@@ -8,7 +8,7 @@ service:
   ports:
     www:
       port: 8080 # The port that the service will be exposed on
-      targetPort: 8080 # The default port of tomcat is 8080
+      targetPort: 8080 # The default port of Tomcat is 8080
 
 # Define the containers that make up this service
 containers:
