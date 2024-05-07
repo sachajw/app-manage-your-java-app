@@ -11,13 +11,8 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Java
-        uses: actions/setup-java@v4
-        with:
-          java-version: '18'
-          distribution: 'temurin'
 
-      # Push
+      # Build and push image
 
       - if: github.ref == 'refs/heads/main'
         name: Login to GitHub Container Registry
@@ -28,5 +23,5 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - if: github.ref == 'refs/heads/main'
-        name: Push image
+        name: Build and push image
         run: make push
