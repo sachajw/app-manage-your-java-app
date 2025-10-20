@@ -61,3 +61,4 @@ The application is designed for deployment via:
 - Container registry at `docker.io/thevestedleopard/manage-your-java-app`
 - to memorize
 - to memorize
+- to memorize
