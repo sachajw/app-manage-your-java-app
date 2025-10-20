@@ -1,7 +1,7 @@
 apiVersion: score.dev/v1b1
 
 metadata:
-  name: # Set by command line
+  name: manage-your-java-app
 
 # Define the ports that this service exposes
 service:
@@ -13,4 +13,4 @@ service:
 # Define the containers that make up this service
 containers:
   frontend:
-    image: # Set by command line
+    image: docker.io/thevestedleopard/manage-your-java-app:latest

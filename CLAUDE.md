@@ -1,0 +1,2 @@
+- to memorize
+- to memorize
