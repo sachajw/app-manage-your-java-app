@@ -1,0 +1,25 @@
+{
+  "apiVersion": "entity.humanitec.io/v1b1",
+  "entity": {
+    "criteria": [
+      {
+        "class": "default",
+        "env_type": "humanitec-vcluster-pi3s-staging",
+        "id": "f9ae2bab9c4f3ed7"
+      }
+    ],
+    "driver_inputs": {
+      "secrets": {
+        "agent_url": "${resources[\"agent.default#vcluster-agent\"].outputs.url}"
+      }
+    },
+    "driver_type": "humanitec/k8s-cluster",
+    "name": "Pi3s K8s Cluster Staging",
+    "type": "k8s-cluster"
+  },
+  "kind": "Definition",
+  "metadata": {
+    "id": "pi3s-k8s-cluster-staging",
+    "orgId": "pangarabbit"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "apiVersion": "entity.humanitec.io/v1b1",
+  "entity": {
+    "criteria": [
+      {
+        "class": "default",
+        "env_type": "humanitec-vcluster-pi3s-staging",
+        "id": "f9ae2bab9c4f3ed7"
+      }
+    ],
+    "driver_inputs": {
+      "secrets": {
+        "agent_url": "${resources[\"agent.default#vcluster-agent\"].outputs.url}",
+        "credentials": {
+          "token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjNXM2c5NE8tVnZ0YnZqUldzTnZobFVPdWZ0UUIzbWpBNm1CeU1oU05Fc0UifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJkZWZhdWx0Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZWNyZXQubmFtZSI6Imh1bWFuaXRlYy1jbHVzdGVyLWFjY2Vzcy10b2tlbiIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJodW1hbml0ZWMtY2x1c3Rlci1hY2Nlc3MiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiIzNmZjN2EzZC04Y2ZmLTQxOTctYWIwYS1kNTVjMGE2YTlmYjAiLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6ZGVmYXVsdDpodW1hbml0ZWMtY2x1c3Rlci1hY2Nlc3MifQ.ZbKZz1NqbcQXQaDsZunP2eHfpVHMJmskFnvd6eQX-RqToVz-SZ3T-UJtmwD_5JYoCJ3QayFMRw5fPYD-OAXU8pOM4ywcmqsfAf7sqwxgOwjgpBSX6yxYoorqLZ0npwLCaHNA_sANy-UN5S-A0P8CQHrImjNsOd_vLdTFEVGkLbbBS6Zsr-h8MAXLWcNFXdOtoNo37gdwilCnwNUZtHOZOkWfgqZIgtr_R-aa8UteqJlrV_UY6i2wdexeiYApUMS67NgxMKy9tq_UuUJ_HQ5IT3IsTWjktfbOZ_gZT4Yh70-VAB20m0ureEOchacbTQJvr1KDqZjvN0mRJGiTXZMzuA"
+        }
+      },
+      "values": {
+        "cluster_data": {
+          "certificate-authority-data": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURCVENDQWUyZ0F3SUJBZ0lJRFBBakxPWmVaNXN3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TlRBNE1UVXhNalE4MVRsYUZ3MHpOVEE4MVRNeE1qUTRNVGxhTUJVeApFekFSQmdOVkJBTVRDbXQxWW1HeWJtVjBaWE13Z2dFaU1BMEdDU3FHU0liM0RRRUJBUVVBQTRJQkR3QXdnZ0VKCkFvSUJBUURnUE5vU2kzb1QyeDVHOXFUYzRsUTFaSno4UkRzYVdvbzh0UmR3ZSs2TlpmTlloUXR6SVVKTXFubysKSWY1SVVsM1lRTno4YmlwdzVRc1lGV0IySndoUHo3dE5RWFR0dnM0Z3pkckdQQW9xZ3hoRmVkZytNeHJaVGI0Kwo3WmFkZmhnVlF0N1M1RlVPekYwdU0xN0Jwa2RPeFBnU3Ztc2dFeDRnL3FqUmlJQll4OTh3Wk1xcnRvOWUxUnVhCjRiSHNicy9FejJ5d3NjTGU2aFVlOVlSWWpUY1E3ajd1cU5HUkZhNFgwUmRFVWRFVk56YjdPbS9MeGd3NDA4aGMKaHlqNkdDRjgxa1lMRHc2dXhUK0l3aVpxV1gyM3ZYbFlNaXlXZ2p1Sk5LSWFpSndzLzZvTkdnTW9QL0pWa1dZSApjN0RMRGpGSk5Bc0hjT2N1Wk1NMXZLRXo4NzgxQWdNQkFBR2pXVEJYTUE0R0ExVWREd0VCL3dRRUF3SUNwREFQCkJnTlZIUk1CQWY4RUJUQURBUUgvTUIwR0ExVWREZ1FXQkJUaUhocVdDYWx1dkVUUldYbGhNbGtXVnI3aEFqQVYKQmdOVkhSRUVEakFNZ2dwcmRXSmxjbTVsZEdWek1BMEdDU3FHU0liM0RRRUJDd1VBQTRJQkFRQ0tzM2RsUEQ0MgpvamRWZlZXZTduWGtnUEZEamFlVUtWanJVUVJpYmxnaENTa21yMm1LNFFGajZ0ZUZYRkpyN293MmJMbjRXWTg0ClpvK0ZicVVkZkNDQzJYS2tyR1pad2lSTW5sbTd4SU5LbVpnd1NwYXFRTnZLOWhnRkxPbUFUbG0zQnkvWDBFa2IKRS9oSitjd29od09DSXF6NDAxaWRjRzBmVTJNajYzU1lReXRkOFI4aHpDMGoxaHlQek5GT3ZRZXRPbzlmckVVawo0MTdWRHFiTmFDbzNYb3l5d3JuY3c4dGN4ck9oV3FPQ2lZdGxJNFQ5ZkFQcUxXbkNRMTdWOTZ3c1NzNlE5TEcrCnI5dHBpSmlZTmY5V3RULytWRmxieGZyWWpVSklCZkhXU0txSUtpL0trVFliZklQZEFTSHNGRzdlSm5OWDgzelMKWTBhd2ZUS2E3MVBPCi0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K",
+          "server": "https://10.43.50.196:443"
+        }
+      }
+    },
+    "driver_type": "humanitec/k8s-cluster",
+    "name": "Pi3s K8s Cluster Staging",
+    "type": "k8s-cluster"
+  },
+  "kind": "Definition",
+  "metadata": {
+    "id": "pi3s-k8s-cluster-staging",
+    "orgId": "pangarabbit"
+  }
+}
