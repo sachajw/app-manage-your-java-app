@@ -217,3 +217,4 @@ The application is designed for deployment via:
 - to memorize
 - to memorize
 - to memorize
+- to memorize
